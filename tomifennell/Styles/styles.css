@@ -186,7 +186,7 @@ video {
     font-weight: 800px !important;
 }
 
-/* 
+/*
 .extra {
     margin-top: 100px;
     text-align: left;
@@ -255,9 +255,9 @@ video {
 }
 
 .img-tape--1:before {
-    left: 35%;
-    top: -4%;
-    transform: rotate(-10deg);
+    left: 50%;
+    top: -15%;
+    transform: rotate(15deg);
 }
 
 .img-tape--2:before {
