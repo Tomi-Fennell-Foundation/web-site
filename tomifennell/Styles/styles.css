@@ -1,0 +1,533 @@
+* {
+    font-family: 'Caveat', cursive;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0 10% !important;
+    width: 80% !important;
+}
+
+.english {
+    background-color: #0C4722;
+    border: 1px solid white;
+    right: 12%;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.english:hover {
+    border: 1px solid #0C4722;
+    color: black;
+    background-color: white;
+}
+
+#englishVersion {
+    display: none;
+}
+
+nav {
+    display: flex !important;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color: white;
+}
+
+nav img {
+    width: 200px;
+    padding: 0 20px;
+}
+
+nav div {
+    width: 40%;
+    background-color: #0C4722;
+    height: 30px;
+    margin: 60px 0;
+}
+
+main {
+    background-color: white;
+}
+
+main img {
+    width: 100%;
+}
+
+.quienesSomos {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    background-color: white;
+}
+
+.quienesSomos div {
+    width: 40%;
+}
+
+.quienesSomos h3 {
+    font-size: 38px;
+    color: #0C4722;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+
+}
+
+p {
+    font-size: 24px;
+    line-height: 30px;
+    color: gray;
+    text-align: justify;
+}
+
+video {
+    height: 500px;
+}
+
+.quienesSomos img {
+    position: absolute;
+    width: 10%;
+}
+
+
+.imagenesHalf {
+    padding-top: 60px;
+    background-color: white;
+}
+
+.info {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #0C4722;
+}
+
+.info div {
+    width: 50%;
+    color: white;
+    vertical-align: middle;
+}
+
+.info img {
+    width: 50%;
+    /* height: 400px; */
+}
+
+.info h4 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 30px 0;
+    padding: 0 60px;
+}
+
+.info p {
+    font-size: 24px;
+    color: white;
+    padding: 0 60px;
+}
+
+.info div button {
+    background-color: gray;
+    padding: 10px 45px;
+    color: white;
+    margin: 20px 0;
+    border: 1px solid #0C4722;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 60px;
+    cursor: pointer;
+}
+
+.info div button:hover {
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.displayMobile {
+    display: none;
+}
+
+.principito {
+    padding-top: 60px;
+    color: rgb(99, 99, 99);
+    text-align: center;
+    background-color: white;
+    background-image: url(../../tomifennell/Images/footerCleanReverse.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.principito img {
+    width: 100%;
+}
+
+.principito h3 {
+    font-size: 60px;
+    font-weight: 800px;
+    margin: 0;
+    font-style: italic;
+}
+
+.principito p {
+    font-size: 28px;
+    text-align: center;
+}
+
+.principito h5 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 800px !important;
+}
+
+/* 
+.extra {
+    margin-top: 100px;
+    text-align: left;
+
+}
+
+.extra h4 {
+    color: #0C4722;
+    font-size: 26px;
+    font-weight: 600;
+} */
+
+.bio {
+    background-color: #0C4722;
+    background-image: url(../../tomifennell/Images/footerClean.JPG);
+    /* background-image: url(../Images/footerClean.JPG); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    padding: 65px 40px 0 35px;
+}
+
+/* .reverse {
+    padding: 0 -40px !important;
+} */
+
+.bio h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.bioInfo {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bioInfo p {
+    width: 70%;
+    color: white !important;
+}
+
+.bioInfo img {
+    width: 100%;
+    border: 5px solid white;
+}
+
+.img-tape {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 20px auto 10px;
+}
+
+.img-tape:before {
+    background: rgba(255, 255, 235, .6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    content: "";
+    display: block;
+    height: 3vh;
+    position: absolute;
+    margin: auto;
+    width: 5vw;
+}
+
+.img-tape--1:before {
+    left: 35%;
+    top: -4%;
+    transform: rotate(-10deg);
+}
+
+.img-tape--2:before {
+    right: 25%;
+    top: -4%;
+    transform: rotate(25deg);
+}
+
+.tomi1 {
+    width: 20%;
+    transform: rotate(-7deg);
+}
+
+.tomi2 {
+    width: 20%;
+    transform: rotate(7deg);
+}
+
+.tomi3 {
+    display: none;
+}
+
+footer {
+    padding: 100px 30px 30px 30px;
+    background-image: url(../../tomifennell/Images/footerClean.JPG);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer div {
+    color: white;
+    padding-top: 100px;
+    text-align: right;
+}
+
+footer h5 {
+    font-size: 20px;
+}
+
+h5 {
+    display: inline;
+}
+
+footer a {
+    cursor: pointer;
+    z-index: 10;
+}
+
+.mediaLink {
+    cursor: pointer;
+    z-index: 20;
+}
+
+footer i {
+    font-size: 15px !important;
+    margin-left: 10px;
+    background-color: white;
+    color: #0D4623;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.hojas {
+    position: absolute;
+    z-index: 0;
+    width: 40% !important;
+    margin-top: -200px;
+    margin-left: 3%;
+}
+
+.hojas0 {
+    position: absolute;
+    z-index: 0;
+    width: 30% !important;
+    left: 8%;
+    margin-top: 380px;
+}
+
+.break {
+    display: none;
+}
+
+video {
+    width: 400px;
+}
+
+@media (max-width: 1100px) {
+    .bioInfo p {
+        width: 50%;
+    }
+
+    .tomi1,
+    .tomi2 {
+        width: 35%;
+    }
+}
+
+
+@media (max-width: 920px) {
+
+    body {
+        background-color: white;
+    }
+
+    .quienesSomos {
+        display: inline;
+        text-align: center;
+    }
+
+    .quienesSomos div {
+        width: 100%;
+    }
+
+    video {
+        display: block;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    .info {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .info img {
+        padding: 15px 10% 0 10%;
+        width: 80%;
+    }
+
+    .info p {
+        padding-bottom: 30px;
+    }
+
+    .info div {
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .info div h4 {
+        padding: 0
+    }
+
+    .displayMobile {
+        display: block;
+    }
+
+    .displayWeb {
+        display: none;
+    }
+
+    .hojas {
+        margin-top: -100px;
+    }
+
+    .hojas0 {
+        margin-top: -100px;
+    }
+
+}
+
+@media(max-width: 720px) {
+    .bioInfo {
+        display: block;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .bioInfo p {
+        width: 100%;
+    }
+
+    .tomi1,
+    .tomi3 {
+        width: 60%;
+    }
+
+    .tomi3 {
+        display: block;
+    }
+
+    .tomi2 {
+        display: none;
+    }
+
+    .principito {
+        margin-top: -25px;
+    }
+
+}
+
+@media(max-width: 630px) {
+    .hojas {
+        margin-top: -50px;
+    }
+
+    nav img,
+    footer img {
+        width: 150px;
+        height: 100px;
+        height: auto;
+    }
+
+    .info p {
+        padding: 15px 30px;
+    }
+
+    video {
+        width: 300px;
+    }
+
+}
+
+
+@media(max-width: 540px) {
+
+    video {
+        width: 200px;
+    }
+
+    .hojas0 {
+        display: none;
+    }
+
+    nav img {
+        width: 150px;
+        height: 120px;
+    }
+
+    .green {
+        margin: 50px 0;
+    }
+
+    footer img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .break {
+        display: block;
+    }
+
+    footer div {
+        padding-top: 10px;
+    }
+
+    footer i {
+        margin-top: 15px;
+    }
+
+    /* footer div {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    footer i {
+        width: 20%;
+    } */
+
+    .english {
+        padding: 5px;
+        font-size: 14px;
+        right: 10%;
+        top: 0;
+    }
+}
