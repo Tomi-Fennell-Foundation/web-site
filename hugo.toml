@@ -1,0 +1,19 @@
+baseURL = 'https://www.tomifenell.com/'
+enableRobotsTXT = false
+sectionPagesMenu = "main"
+
+defaultContentLanguage = 'es'
+defaultContentLanguageInSubdir = true
+[languages]
+    [languages.es]
+        disabled = false
+        languageCode = 'es-419'
+        languageDirection = 'ltr'
+        languageName = 'Español'
+        weight = 10
+    [languages.en]
+        disabled = false
+        languageCode = 'en-us'
+        languageDirection = 'ltr'
+        languageName = 'English'
+        weight = 20

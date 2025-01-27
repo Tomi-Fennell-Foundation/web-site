@@ -1,0 +1,21 @@
+{{/*  <h1>{{ T "siteTitle" }}</h1>  */}}
+{{/*  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}  */}}
+
+{{/*  {{ $js := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $js.Permalink }}" defer></script>  */}}
+{{/*  {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}  */}}
+
+
+<nav>
+    <div class="green"></div>
+    <a href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/">
+        <img src='/icono.png' alt="icon" />
+    </a>
+    <div class="green"></div>
+    <button
+        {{ range.Translations }}
+        onclick="window.location.href = '{{ .Permalink }}';"
+        {{ end }}
+        class="english"
+    >{{ T "languageButton" }}</button>
+</nav>
