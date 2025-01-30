@@ -10,7 +10,7 @@
         {{ .Content }}
     </div>
 
-    {{- $videoFileName := printf "images/%s" (T "videoGraciana") -}}
+    {{- $videoFileName := printf "images/%s" .Params.videoGraciana -}}
     {{ with .Resources.Get $videoFileName }}
         <video controls>
             <source src='{{ .Permalink }}' type="video/mp4">

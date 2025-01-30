@@ -1,6 +1,7 @@
 +++
 layout = 'about'
 title = 'Quiénes Somos'
+videoGraciana = 'videoGraciana_es.mp4'
 +++
 
 La fundación nace de la mano de Graciana Rodríguez, quien inició esta tarea solidaria en nombre de su
