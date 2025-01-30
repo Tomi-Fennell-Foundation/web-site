@@ -1,16 +1,37 @@
 {{ define "main" }}
 
-<img src="/firstImage.png" alt="KidsAndSolarPanel" />
+{{ with .Resources.Get "images/firstImage.png" }}
+    <img src='{{ .Permalink }}' alt="KidsAndSolarPanel" />
+{{ end }}
 
 <div class="quienesSomos">
     <div>
         <h3>{{ .Title }}</h3>
         {{ .Content }}
     </div>
-    <video controls>
-        <source src='/{{ T "videoGraciana" }}' type="video/mp4">
-    </video>
-    <img class="hojas0" src="/hojas_0.png" alt="">
+
+    {{- $videoFileName := printf "images/%s" (T "videoGraciana") -}}
+    {{ with .Resources.Get $videoFileName }}
+        <video controls>
+            <source src='{{ .Permalink }}' type="video/mp4">
+        </video>
+    {{ end }}
+
+    {{ with .Resources.Get "images/hojas_0.png" }}
+        <img src='{{ .Permalink }}' alt="hojas" class="hojas0" />
+    {{ end }}
+</div>
+
+<div class="bio">
+    <div>
+        <h4>{{ T "bioTitle" }}Tomi bio</h4>
+        <div class="bioInfo">
+            <div class="tomi1 img-tape img-tape--1">
+                <img class="" src="images/tomi1.jpeg" alt="tomiFennel">
+            </div>
+            {{/*  {{ (.Resources.GetMatch "tomi.es.md").Content }}  */}}
+        </div>
+    </div>
 </div>
 
 {{ end }}
