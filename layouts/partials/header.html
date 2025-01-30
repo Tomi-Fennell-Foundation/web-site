@@ -14,7 +14,7 @@
     <div class="green"></div>
     <button
         {{ range.Translations }}
-        onclick="window.location.href = '{{ .Permalink }}';"
+        onclick="window.location.assign('{{ .Permalink }}');"
         {{ end }}
         class="english"
     >{{ T "languageButton" }}</button>
