@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<img src="/firstImage.png" alt="KidsAndSolarPanel" />
+
+<div class="quienesSomos">
+    <div>
+        <h3>{{ .Title }}</h3>
+        {{ .Content }}
+    </div>
+    <video controls>
+        <source src='/{{ T "videoGraciana" }}' type="video/mp4">
+    </video>
+    <img class="hojas0" src="/hojas_0.png" alt="">
+</div>
+
+{{ end }}
