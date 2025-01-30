@@ -26,10 +26,12 @@
     <div>
         <h4>{{ T "bioTitle" }}Tomi bio</h4>
         <div class="bioInfo">
-            <div class="tomi1 img-tape img-tape--1">
-                <img class="" src="images/tomi1.jpeg" alt="tomiFennel">
-            </div>
-            {{/*  {{ (.Resources.GetMatch "tomi.es.md").Content }}  */}}
+            {{ with .Resources.Get "images/tomi1.jpeg" }}
+                <div class="tomi1 img-tape img-tape--1">
+                    <img src='{{ .Permalink }}' alt="tomiFennel" />
+                </div>
+            {{ end }}
+            {{/*  {{ .Resources.Get "tomi.md" }}  */}}
         </div>
     </div>
 </div>
