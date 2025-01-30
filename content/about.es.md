@@ -1,6 +1,5 @@
 +++
-date = '2025-01-25T18:07:11-05:00'
-draft = true
+layout = 'about'
 title = 'Quiénes Somos'
 +++
 
