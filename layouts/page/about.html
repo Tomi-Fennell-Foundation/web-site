@@ -29,11 +29,21 @@
     <div class="bioInfo">
         {{ with .Resources.Get "images/tomi1.jpeg" }}
             <div class="tomi1 img-tape img-tape--1">
-                <img src='{{ .Permalink }}' alt="tomiFennel" />
+                <img src='{{ .Permalink }}' alt="Tomi Fennell" />
             </div>
         {{ end }}
         {{ with .Resources.Get "tomi.md" }}
             {{ .Content }}
+        {{ end }}
+    </div>
+    <div class="bioInfo reverse">
+        {{ with .Resources.Get "tomi_quote.md" }}
+            {{ .Content }}
+        {{ end }}
+        {{ with .Resources.Get "images/tomi2.jpeg" }}
+            <div class="tomi2 img-tape img-tape--2">
+                <img src='{{ .Permalink }}' alt="Tomi Fennell" />
+            </div>
         {{ end }}
     </div>
 </div>
