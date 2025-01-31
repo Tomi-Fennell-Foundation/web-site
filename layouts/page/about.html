@@ -18,7 +18,7 @@
     {{ end }}
 
     {{ with .Resources.Get "images/hojas_0.png" }}
-        <img src='{{ .Permalink }}' alt="hojas" class="hojas0" />
+        <img src='{{ .Permalink }}' alt="hojas_0" class="hojas0" />
     {{ end }}
 </div>
 
@@ -46,6 +46,20 @@
             </div>
         {{ end }}
     </div>
+</div>
+
+<div class="principito">
+    <div>
+        {{ with .Resources.Get "images/principito.jpg" }}
+            <img src='{{ .Permalink }}' alt="El Principito" />
+        {{ end }}
+        {{ with .Resources.Get "principito.md" }}
+            {{ .Content }}
+        {{ end }}
+    </div>
+    {{ with .Resources.Get "images/hojas_1.png" }}
+        <img class="hojas" src='{{ .Permalink }}' alt="hojas_1" />
+    {{ end }}
 </div>
 
 {{ end }}
