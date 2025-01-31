@@ -23,16 +23,18 @@
 </div>
 
 <div class="bio">
-    <div>
-        <h4>{{ T "bioTitle" }}Tomi bio</h4>
-        <div class="bioInfo">
-            {{ with .Resources.Get "images/tomi1.jpeg" }}
-                <div class="tomi1 img-tape img-tape--1">
-                    <img src='{{ .Permalink }}' alt="tomiFennel" />
-                </div>
-            {{ end }}
-            {{/*  {{ .Resources.Get "tomi.md" }}  */}}
-        </div>
+    {{ with .Resources.Get "tomi.md" }}
+        <h4>{{ .Title }}</h4>
+    {{ end }}
+    <div class="bioInfo">
+        {{ with .Resources.Get "images/tomi1.jpeg" }}
+            <div class="tomi1 img-tape img-tape--1">
+                <img src='{{ .Permalink }}' alt="tomiFennel" />
+            </div>
+        {{ end }}
+        {{ with .Resources.Get "tomi.md" }}
+            {{ .Content }}
+        {{ end }}
     </div>
 </div>
 
