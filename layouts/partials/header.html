@@ -9,7 +9,9 @@
 <nav>
     <div class="green"></div>
     <a href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/">
-        <img src='/icono.png' alt="icon" />
+        {{- with resources.Get "/images/icono.png" }}
+            <img src="{{- .RelPermalink }}" alt="icon" />
+        {{- end }}
     </a>
     <div class="green"></div>
     <button
