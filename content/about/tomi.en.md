@@ -1,5 +1,5 @@
 +++
-title = "Thomas R. Fennell nació en Pittsburg, Pennsylvania, USA, el 7 de junio de 1998"
+title = "Thomas R. Fennell (Tomi) was born in Pittsburgh, PA, USA, on June 7, 1998. He was the second born of four brothers."
 +++
 
 Tomi in English.

@@ -1,5 +1,5 @@
 +++
-title = "Thomas R. Fennell nació en Pittsburg, Pennsylvania, USA, el 7 de junio de 1998"
+title = "Thomas R. Fennell nació en Pittsburgh, Pennsylvania, USA, el 7 de junio de 1998"
 +++
 
 Desde pequeño siempre buscaba formas de defender a otros. Le encantaba leer, escribir y estudiar.  Sus deportes favoritos fueron el tenis y el basketball. Jugó con el equipo de tenis de la secundaria.  
