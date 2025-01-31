@@ -1,4 +1,6 @@
-<img src="/iconoGreen.png" alt="icon">
+{{- with resources.Get "/images/iconoGreen.png" }}
+    <img src="{{- .RelPermalink }}" alt="icon" />
+{{- end }}
 <div>
     <h5>{{ T "followUs" }}</h5> <br class="break">
     <a href="https://www.instagram.com/iris_energia/" target="_blank">
