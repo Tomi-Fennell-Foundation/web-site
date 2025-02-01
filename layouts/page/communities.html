@@ -1,12 +1,14 @@
 {{- define "main" }}
 
 <div class="quienesSomos">
-    {{ .Content }}
+    <div>
+        {{ .Content }}
+    </div>
 </div>
 
 <div style="display: flex; justify-content: center;">
     <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeWWDS1tJQRLJ6OjnaVLjuitaQG18gWBP_neU7xVBCPPFq_ww/viewform?embedded=true"
+        src="{{- .Params.form_url }}"
         width="800"
         height="1140"
         frameborder="0"
