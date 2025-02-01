@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
     <head>
-        {{ partial "head.html" . }}
+        {{ partialCached "head.html" . }}
     </head>
     <body>
         <header>
-            {{ partial "header.html" . }}
+            {{ partialCached "header.html" . }}
         </header>
         <main>
             {{ block "main" . }}{{ end }}
         </main>
         {{- with resources.Get "/images/footerClean.jpg" }}
             <footer style="--bg-img-footer-clean: url({{ .RelPermalink }})">
-                {{ partial "footer.html" . }}
+                {{ partialCached "footer.html" . }}
             </footer>
         {{- end }}
     </body>
