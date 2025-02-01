@@ -9,6 +9,7 @@ body {
 }
 
 .languageButton {
+    display: flex !important;
     background-color: #0C4722;
     border: 1px solid white;
     right: 5px;
