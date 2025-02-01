@@ -22,7 +22,7 @@
     {{- end }}
 </div>
 
-<div class="bio">
+<div class="bio" {{- with resources.Get "images/footerClean.jpg" }} style="--bg-img-footer-clean: url({{ .RelPermalink }})" {{- end }}>
     {{- with .Resources.Get "tomi.md" }}
         <h4>{{- .Title }}</h4>
     {{- end }}
@@ -48,7 +48,7 @@
     </div>
 </div>
 
-<div class="principito">
+<div class="principito" {{- with resources.Get "images/footerCleanReverse.png" }} style="--bg-img-footer-clean-reverse: url({{ .RelPermalink }})" {{- end }}>
     <div>
         {{- with .Resources.Get "images/principito.jpg" }}
             <img src='{{- .Permalink }}' alt="El Principito" />

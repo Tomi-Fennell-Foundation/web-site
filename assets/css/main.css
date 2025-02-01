@@ -158,7 +158,7 @@ video {
     color: rgb(99, 99, 99);
     text-align: center;
     background-color: white;
-    background-image: url(/footerCleanReverse.png);
+    background-image: var(--bg-img-footer-clean-reverse);
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -188,7 +188,7 @@ video {
 
 .bio {
     background-color: #0C4722;
-    background-image: url(/footerClean.JPG);
+    background-image: var(--bg-img-footer-clean);
     background-repeat: no-repeat;
     background-size: contain;
     color: white;
@@ -268,7 +268,7 @@ video {
 
 footer {
     padding: 100px 30px 30px 30px;
-    background-image: url(/footerClean.JPG);
+    background-image: var(--bg-img-footer-clean);
     display: flex;
     justify-content: space-between;
 }
