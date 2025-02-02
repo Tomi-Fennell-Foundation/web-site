@@ -4,8 +4,8 @@
 
 body {
     background-color: lightgray;
-    margin: 0 10% !important;
-    width: 80% !important;
+    margin: 0 !important;
+    width: 100% !important;
 }
 
 .languageButton {
