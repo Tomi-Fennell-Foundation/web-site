@@ -73,15 +73,22 @@ main img {
 }
 
 .quienesSomos div {
-    width: 40%;
+    width: 70%;
 }
 
 .quienesSomos h3 {
     font-size: 38px;
     color: #0C4722;
     font-weight: 600;
-    margin: 10px 0 20px 0;
+    margin: 0 3%;
+}
 
+.quienesSomos p {
+    font-size: 24px;
+    line-height: 30px;
+    color: gray;
+    text-align: justify;
+    padding: 0 3% 0;
 }
 
 p {
@@ -161,14 +168,13 @@ video {
 }
 
 .principito {
-    padding-top: 60px;
+    padding-top: 80px;
     color: rgb(99, 99, 99);
     text-align: center;
     background-color: white;
     background-image: var(--bg-img-footer-clean-reverse);
     background-repeat: no-repeat;
     background-size: contain;
-
 }
 
 .principito img {
@@ -179,11 +185,10 @@ video {
     font-size: 60px;
     font-weight: 800px;
     margin: 0;
-    font-style: italic;
 }
 
 .principito p {
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -199,7 +204,7 @@ video {
     background-repeat: no-repeat;
     background-size: contain;
     color: white;
-    padding: 65px 40px 0 35px;
+    padding: 65px 3% 35px;
 }
 
 .bio h4 {
@@ -244,8 +249,8 @@ video {
 }
 
 .img-tape--1:before {
-    left: 50%;
-    top: -15%;
+    left: 45%;
+    top: -7%;
     transform: rotate(15deg);
 }
 
@@ -270,7 +275,7 @@ video {
 }
 
 footer {
-    padding: 100px 30px 30px 30px;
+    padding: 50px 30px 30px 30px;
     background-image: var(--bg-img-footer-clean);
     display: flex;
     justify-content: space-between;
