@@ -277,6 +277,8 @@ video {
 footer {
     padding: 50px 30px 30px 30px;
     background-image: var(--bg-img-footer-clean);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
 }
