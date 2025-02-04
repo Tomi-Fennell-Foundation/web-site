@@ -50,8 +50,8 @@ nav img {
     padding: 0 20px;
 }
 
-nav div {
-    width: 40%;
+.nav_green_bar {
+    width: 60%;
     background-color: #0C4722;
     height: 30px;
     margin: 75px 0;

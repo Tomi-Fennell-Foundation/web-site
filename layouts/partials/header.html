@@ -1,18 +1,18 @@
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-
 {{/*  {{ $js := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $js.Permalink }}" defer></script>  */}}
 {{/*  {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}  */}}
 
 
 <nav>
-    <div class="green"></div>
+    <div class="nav_green_bar"></div>
     <a href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/">
         {{- with resources.Get "/images/icono.png" }}
-            <img src="{{- .RelPermalink }}" alt="icon" />
+            <div class="navimg">
+                <img src="{{- .RelPermalink }}" alt="icon" />
+            </div>
         {{- end }}
     </a>
-    <div class="green"></div>
+    <div class="nav_green_bar"></div>
     <button
         {{ range.Translations }}
         onclick="window.location.assign('{{ .Permalink }}');"
@@ -20,3 +20,5 @@
         class="languageButton"
     >{{ T "languageButton" }}</button>
 </nav>
+
+{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
