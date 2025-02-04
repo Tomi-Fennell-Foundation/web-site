@@ -9,26 +9,25 @@
 [[main]]
     identifier = "about"
     pageRef = "/about"
-    weight = 0
+    weight = 10
 [[main]]
     identifier = "communities"
     pageRef = "/communities"
-    weight = 10
+    weight = 20
 [[main]]
     identifier = "projects"
-    pageRef = "/projects"
-    weight = 20
+    weight = 30
     [[main]]
         parent = "projects"
         identifier = "sierra-dorada"
         pageRef = "/projects/sierra-dorada"
-        weight = 40
+        weight = 10
     [[main]]
         parent = "projects"
         identifier = "2025"
         pageRef = "/projects/2025"
-        weight = 40
+        weight = 20
 [[main]]
     identifier = "donate"
     pageRef = "/donate"
-    weight = 30
+    weight = 40
