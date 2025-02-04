@@ -54,7 +54,8 @@ Renders a menu for the given menu ID.
 			>{{ $name }}</a>
 		{{- else }}
 		 	<div class="dropdown">
-				<button class="dropbtn">{{ $name }}<i class="fa fa-caret-down"></i>
+				<button class="dropbtn">{{ $name }}
+                    <i class="fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content">
 					{{- with .Children }}
