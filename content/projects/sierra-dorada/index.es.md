@@ -1,5 +1,6 @@
 +++
 title = 'Sierra Dorada - 2024'
+layout = "project"
 +++
 
 ### Español

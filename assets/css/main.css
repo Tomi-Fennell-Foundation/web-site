@@ -65,6 +65,14 @@ main img {
     width: 100%;
 }
 
+.project {
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin: 0 3%;
+}
+
 .quienesSomos {
     display: flex;
     justify-content: space-around;
