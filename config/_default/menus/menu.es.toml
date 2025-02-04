@@ -7,16 +7,20 @@
 # menu.en.toml unless you intend to have different menus for the different
 # languages.
 [[main]]
-    identifier = "about"
-    pageRef = "/about"
+    identifier = "home"
+    pageRef = "/"
     weight = 10
+[[main]]
+    identifier = "tomi"
+    pageRef = "/tomi"
+    weight = 20
 [[main]]
     identifier = "communities"
     pageRef = "/communities"
-    weight = 20
+    weight = 30
 [[main]]
     identifier = "projects"
-    weight = 30
+    weight = 40
     [[main]]
         parent = "projects"
         identifier = "sierra-dorada"
@@ -30,4 +34,4 @@
 [[main]]
     identifier = "donate"
     pageRef = "/donate"
-    weight = 40
+    weight = 50
