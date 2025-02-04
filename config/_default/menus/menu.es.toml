@@ -7,6 +7,7 @@
 # menu.en.toml unless you intend to have different menus for the different
 # languages.
 [[main]]
+    name = "\u2302"
     identifier = "home"
     pageRef = "/"
     weight = 10
