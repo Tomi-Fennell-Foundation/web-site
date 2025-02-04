@@ -1,27 +1,5 @@
 {{- define "main" }}
 
-{{- with .Resources.Get "images/firstImage.png" }}
-    <img src='{{- .Permalink }}' alt="KidsAndSolarPanel" />
-{{- end }}
-
-<div class="quienesSomos">
-    <div>
-        <h3>{{- .Title }}</h3>
-        {{- .Content }}
-    </div>
-
-    {{- $videoFileName := printf "images/%s" .Params.videoGraciana -}}
-    {{- with .Resources.Get $videoFileName }}
-        <video controls>
-            <source src='{{- .Permalink }}' type="video/mp4">
-        </video>
-    {{- end }}
-
-    {{- with .Resources.Get "images/hojas_0.png" }}
-        <img src='{{- .Permalink }}' alt="hojas_0" class="hojas0" />
-    {{- end }}
-</div>
-
 <div class="bio" {{- with resources.Get "images/footerClean.jpg" }} style="--bg-img-footer-clean: url({{ .RelPermalink }})" {{- end }}>
     {{- with .Resources.Get "tomi.md" }}
         <h4>{{- .Title }}</h4>
