@@ -4,6 +4,7 @@ sectionPagesMenu = "main"
 
 defaultContentLanguage = 'es'
 defaultContentLanguageInSubdir = true
+
 [languages]
     [languages.es]
         disabled = false
