@@ -13,6 +13,7 @@ body {
     background-color: #0C4722;
     border: 1px solid white;
     right: 5px;
+    top: 5px;
     position: absolute;
     color: white;
     font-weight: 600;
@@ -32,29 +33,20 @@ body {
     display: none;
 }
 
-header {
+nav {
     position: sticky;
     top: 0;
     z-index: 1;
-}
-
-nav {
     display: flex !important;
     justify-content: space-between;
-    padding-top: 5px;
-    background-color: white;
+    background-color: #f7fff7;
 }
 
 nav img {
-    width: 150px;
-    padding: 0 5px;
-}
-
-.nav_green_bar {
-    width: 60%;
-    background-color: #0C4722;
-    height: 30px;
-    margin: 75px 0;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }
 
 main {
