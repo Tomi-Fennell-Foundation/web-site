@@ -100,21 +100,12 @@ p {
 
 video {
     height: 500px;
+    width: 400px;
 }
 
 .quienesSomos img {
     position: absolute;
     width: 10%;
-}
-
-
-.imagenesHalf {
-    padding-top: 60px;
-    background-color: white;
-}
-
-.displayMobile {
-    display: none;
 }
 
 .principito {
@@ -220,10 +211,6 @@ video {
     transform: rotate(7deg);
 }
 
-.tomi3 {
-    display: none;
-}
-
 footer {
     padding: 50px 30px 30px 30px;
     background-image: var(--bg-img-footer-clean);
@@ -292,9 +279,6 @@ footer i {
     display: none;
 }
 
-video {
-    width: 400px;
-}
 
 @media (max-width: 1100px) {
     .bioInfo p {
@@ -329,34 +313,6 @@ video {
         background-color: white;
     }
 
-    .info {
-        display: block;
-        padding-bottom: 20px;
-    }
-
-    .info img {
-        padding: 15px 10% 0 10%;
-        width: 80%;
-    }
-
-    .info p {
-        padding-bottom: 30px;
-    }
-
-    .info div {
-        width: 90%;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .info div h4 {
-        padding: 0
-    }
-
-    .displayMobile {
-        display: block;
-    }
-
     .displayWeb {
         display: none;
     }
@@ -368,8 +324,8 @@ video {
     .hojas0 {
         margin-top: -100px;
     }
-
 }
+
 
 @media(max-width: 720px) {
     .bioInfo {
@@ -383,13 +339,6 @@ video {
     }
 
     .tomi1,
-    .tomi3 {
-        width: 60%;
-    }
-
-    .tomi3 {
-        display: block;
-    }
 
     .tomi2 {
         display: none;
@@ -398,8 +347,8 @@ video {
     .principito {
         margin-top: -25px;
     }
-
 }
+
 
 @media(max-width: 630px) {
     .hojas {
@@ -413,19 +362,13 @@ video {
         height: auto;
     }
 
-    .info p {
-        padding: 15px 30px;
-    }
-
     video {
         width: 300px;
     }
-
 }
 
 
 @media(max-width: 540px) {
-
     video {
         width: 300px;
     }
