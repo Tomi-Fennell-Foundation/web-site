@@ -5,6 +5,7 @@
     background-color: #0c4722;
     overflow: hidden;
     width: 100%;
+    height: 50px;
 }
 
 /* Style the links inside the navigation bar */
@@ -22,6 +23,7 @@
 .active {
     background-color: rgb(251, 194, 6); /* #f0fbf0; */
     color: #0c4722 !important;
+    pointer-events: none;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
