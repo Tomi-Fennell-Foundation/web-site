@@ -1,10 +1,25 @@
 {{- define "main" }}
-    {{- .Content }}
-    {{- range where site.RegularPages "Section" "!=" "projects" }}
-        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-        {{/*  {{- .Summary }}  */}}
+
+    {{- with resources.Get "/images/firstImage.png" }}
+        <img src='{{- .Permalink }}' alt="KidsAndSolarPanel" />
     {{- end }}
-    {{- range site.Sections }}
-        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{- end }}
+
+    <div class="quienesSomos">
+        <div>
+            <h3>{{- T "siteTitle" }}</h3>
+            {{- .Content }}
+        </div>
+
+        {{- with resources.Get "/images/hojas_0.png" }}
+            <img src='{{- .Permalink }}' alt="hojas_0" class="hojas0" />
+        {{- end }}
+
+        {{- $videoFileName := printf "/images/%s" .Params.videoGraciana -}}
+        {{- with resources.Get $videoFileName }}
+            <video controls>
+                <source src='{{- .Permalink }}' type="video/mp4">
+            </video>
+        {{- end }}
+    </div>
+
 {{- end }}

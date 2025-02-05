@@ -1,0 +1,38 @@
+# This file is the Spanish menu configuration file. Its English counterpart is
+# menu.en.toml, which is a symlink to this file because both files have exactly
+# the same content. This is necessary because Hugo does not support
+# language-specific menus (or I didn't find a way to do it).
+#
+# Modify this file to change the menu structure of the site. Do not mess with
+# menu.en.toml unless you intend to have different menus for the different
+# languages.
+[[main]]
+    name = "\u2302"
+    identifier = "home"
+    pageRef = "/"
+    weight = 10
+[[main]]
+    identifier = "tomi"
+    pageRef = "/tomi"
+    weight = 20
+[[main]]
+    identifier = "communities"
+    pageRef = "/communities"
+    weight = 30
+[[main]]
+    identifier = "projects"
+    weight = 40
+    [[main]]
+        parent = "projects"
+        identifier = "sierra-dorada"
+        pageRef = "/projects/sierra-dorada"
+        weight = 10
+    [[main]]
+        parent = "projects"
+        identifier = "2025"
+        pageRef = "/projects/2025"
+        weight = 20
+[[main]]
+    identifier = "donate"
+    pageRef = "/donate"
+    weight = 50

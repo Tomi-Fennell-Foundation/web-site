@@ -1,5 +1,6 @@
 +++
 title = 'Project 2025'
+layout = "project"
 +++
 
 ### English

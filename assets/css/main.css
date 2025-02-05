@@ -13,6 +13,7 @@ body {
     background-color: #0C4722;
     border: 1px solid white;
     right: 5px;
+    top: 5px;
     position: absolute;
     color: white;
     font-weight: 600;
@@ -22,39 +23,20 @@ body {
     cursor: pointer;
 }
 
-.english:hover {
-    border: 1px solid #0C4722;
-    color: black;
-    background-color: white;
-}
-
-#englishVersion {
-    display: none;
-}
-
-header {
+nav {
     position: sticky;
     top: 0;
     z-index: 1;
-}
-
-nav {
     display: flex !important;
     justify-content: space-between;
-    padding-top: 5px;
-    background-color: white;
+    background-color: #f7fff7;
 }
 
 nav img {
     width: 200px;
-    padding: 0 20px;
-}
-
-nav div {
-    width: 40%;
-    background-color: #0C4722;
-    height: 30px;
-    margin: 75px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }
 
 main {
@@ -63,6 +45,14 @@ main {
 
 main img {
     width: 100%;
+}
+
+.project {
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin: 0 3%;
 }
 
 .quienesSomos {
@@ -100,71 +90,12 @@ p {
 
 video {
     height: 500px;
+    width: 400px;
 }
 
 .quienesSomos img {
     position: absolute;
     width: 10%;
-}
-
-
-.imagenesHalf {
-    padding-top: 60px;
-    background-color: white;
-}
-
-.info {
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: #0C4722;
-}
-
-.info div {
-    width: 50%;
-    color: white;
-    vertical-align: middle;
-}
-
-.info img {
-    width: 50%;
-    /* height: 400px; */
-}
-
-.info h4 {
-    font-size: 36px;
-    font-weight: 600;
-    margin: 30px 0;
-    padding: 0 60px;
-}
-
-.info p {
-    font-size: 24px;
-    color: white;
-    padding: 0 60px;
-}
-
-.info div button {
-    background-color: gray;
-    padding: 10px 45px;
-    color: white;
-    margin: 20px 0;
-    border: 1px solid #0C4722;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 60px;
-    cursor: pointer;
-}
-
-.info div button:hover {
-    color: gray;
-    background-color: white;
-    border: 1px solid gray;
-}
-
-.displayMobile {
-    display: none;
 }
 
 .principito {
@@ -221,12 +152,11 @@ video {
 }
 
 .bioInfo p {
-    width: 70%;
+    width: 60%;
     color: white !important;
 }
 
 .bioInfo img {
-    width: 100%;
     border: 5px solid white;
 }
 
@@ -250,28 +180,24 @@ video {
 
 .img-tape--1:before {
     left: 45%;
-    top: -7%;
+    top: -6%;
     transform: rotate(15deg);
 }
 
 .img-tape--2:before {
-    right: 25%;
+    right: 45%;
     top: -4%;
     transform: rotate(25deg);
 }
 
 .tomi1 {
-    width: 20%;
+    width: 30%;
     transform: rotate(-7deg);
 }
 
 .tomi2 {
-    width: 20%;
+    width: 30%;
     transform: rotate(7deg);
-}
-
-.tomi3 {
-    display: none;
 }
 
 footer {
@@ -342,17 +268,13 @@ footer i {
     display: none;
 }
 
-video {
-    width: 400px;
-}
 
 @media (max-width: 1100px) {
     .bioInfo p {
-        width: 50%;
+        width: 55%;
     }
 
-    .tomi1,
-    .tomi2 {
+    .tomi1, .tomi2 {
         width: 35%;
     }
 }
@@ -379,38 +301,6 @@ video {
         background-color: white;
     }
 
-    .info {
-        display: block;
-        padding-bottom: 20px;
-    }
-
-    .info img {
-        padding: 15px 10% 0 10%;
-        width: 80%;
-    }
-
-    .info p {
-        padding-bottom: 30px;
-    }
-
-    .info div {
-        width: 90%;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .info div h4 {
-        padding: 0
-    }
-
-    .displayMobile {
-        display: block;
-    }
-
-    .displayWeb {
-        display: none;
-    }
-
     .hojas {
         margin-top: -100px;
     }
@@ -418,8 +308,8 @@ video {
     .hojas0 {
         margin-top: -100px;
     }
-
 }
+
 
 @media(max-width: 720px) {
     .bioInfo {
@@ -432,24 +322,15 @@ video {
         width: 100%;
     }
 
-    .tomi1,
-    .tomi3 {
-        width: 60%;
+    .tomi1, .tomi2 {
+        width: 80%;
     }
 
-    .tomi3 {
-        display: block;
+    .img-tape--1:before {
+        top: -3%;
     }
-
-    .tomi2 {
-        display: none;
-    }
-
-    .principito {
-        margin-top: -25px;
-    }
-
 }
+
 
 @media(max-width: 630px) {
     .hojas {
@@ -463,21 +344,15 @@ video {
         height: auto;
     }
 
-    .info p {
-        padding: 15px 30px;
-    }
-
     video {
         width: 300px;
     }
-
 }
 
 
 @media(max-width: 540px) {
-
     video {
-        width: 200px;
+        width: 300px;
     }
 
     .hojas0 {
@@ -487,10 +362,6 @@ video {
     nav img {
         width: 150px;
         height: 120px;
-    }
-
-    .green {
-        margin: 50px 0;
     }
 
     footer img {
@@ -508,12 +379,5 @@ video {
 
     footer i {
         margin-top: 15px;
-    }
-
-    .english {
-        padding: 5px;
-        font-size: 14px;
-        right: 10%;
-        top: 0;
     }
 }
