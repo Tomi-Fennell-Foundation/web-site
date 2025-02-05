@@ -113,56 +113,6 @@ video {
     background-color: white;
 }
 
-.info {
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: #0C4722;
-}
-
-.info div {
-    width: 50%;
-    color: white;
-    vertical-align: middle;
-}
-
-.info img {
-    width: 50%;
-    /* height: 400px; */
-}
-
-.info h4 {
-    font-size: 36px;
-    font-weight: 600;
-    margin: 30px 0;
-    padding: 0 60px;
-}
-
-.info p {
-    font-size: 24px;
-    color: white;
-    padding: 0 60px;
-}
-
-.info div button {
-    background-color: gray;
-    padding: 10px 45px;
-    color: white;
-    margin: 20px 0;
-    border: 1px solid #0C4722;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 60px;
-    cursor: pointer;
-}
-
-.info div button:hover {
-    color: gray;
-    background-color: white;
-    border: 1px solid gray;
-}
-
 .displayMobile {
     display: none;
 }
