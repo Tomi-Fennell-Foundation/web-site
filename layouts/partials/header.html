@@ -4,15 +4,10 @@
 
 
 <nav>
-    <div class="nav_green_bar"></div>
-    <a href="{{ .Site.BaseURL }}{{ .Site.Language.Lang }}/">
-        {{- with resources.Get "/images/icono.png" }}
-            <div class="navimg">
-                <img src="{{- .RelPermalink }}" alt="icon" />
-            </div>
-        {{- end }}
-    </a>
-    <div class="nav_green_bar"></div>
+    {{- with resources.Get "/images/icono.png" }}
+        <img src="{{- .RelPermalink }}" alt="icon" />
+    {{- end }}
+
     <button
         {{ range.Translations }}
         onclick="window.location.assign('{{ .Permalink }}');"
