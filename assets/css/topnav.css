@@ -115,3 +115,14 @@
         text-align: left;
     }
 }
+
+/* Put a line separating the topnav from the rest of the page */
+.topnav::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgb(251, 194, 6, 255) 0, rgba(12, 71, 34, 0) 100%);
+    margin-top: 50px;
+    height: 4px;
+    width: 100%;
+    content: "";
+}
