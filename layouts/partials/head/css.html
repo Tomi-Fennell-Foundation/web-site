@@ -1,4 +1,4 @@
-{{- range slice "css/main.css" "css/topnav.css" }}
+{{- range slice "css/main.css" "css/topnav.css" "css/donate.css" }}
     {{- with resources.Get . }}
         {{- if eq hugo.Environment "development" }}
             <link rel="stylesheet" href="{{ .RelPermalink }}">
