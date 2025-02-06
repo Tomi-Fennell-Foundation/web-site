@@ -1,18 +1,47 @@
 {{- define "main" }}
 
+<script async
+    src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
 <div class="quienesSomos">
     {{ .Content }}
 </div>
 
-<div style="display: flex; justify-content: center;">
+<button type="button" class="collapsible">Stripe</button>
+<div class="content">
+    <stripe-buy-button
+        buy-button-id="{{- .Params.stripe_button_id }}"
+        publishable-key="pk_test_51QpEFXAiAIZ7c7p74YIb0LHuwkt4ncjzxydzyqOkmR1jALyNSWSZ3za3PNWkwep6SuOuK33FUFjP2tEzg9EiPdTL00Nw0dpTZn"
+    >
+    </stripe-buy-button>
+</div>
+
+<button type="button" class="collapsible">None</button>
+<div class="content">
     <iframe
         src="{{- .Params.form_url }}"
         width="800"
-        height="950"
+        height="1050"
         frameborder="0"
-        marginheight="0"
-        marginwidth="0"
     >{{- .Params.loading }}</iframe>
 </div>
+
+<script>
+    var collapsible = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < collapsible.length; i++) {
+        collapsible[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 
 {{- end }}
