@@ -8,7 +8,12 @@
     {{ .Content }}
 </div>
 
-<button type="button" class="collapsible">Stripe</button>
+<button type="button" class="collapsible">
+    {{- with resources.Get "images/stripe.ico" }}
+        <img src="{{- .RelPermalink }}" alt="Stripe" width="2"/>
+    {{- end }}
+    Stripe
+</button>
 <div class="content">
     <stripe-buy-button
         buy-button-id="{{- .Params.stripe_button_id }}"
@@ -17,7 +22,8 @@
     </stripe-buy-button>
 </div>
 
-<button type="button" class="collapsible">None</button>
+<button type="button" class="collapsible">{{- .Params.no_platform }}
+</button>
 <div class="content">
     <iframe
         src="{{- .Params.form_url }}"
@@ -33,7 +39,7 @@
 
     for (i = 0; i < collapsible.length; i++) {
         collapsible[i].addEventListener("click", function() {
-            this.classList.toggle("active");
+            this.classList.toggle("active-collapsible");
             var content = this.nextElementSibling;
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;
