@@ -22,4 +22,16 @@
         {{- end }}
     </div>
 
+    <div
+        class="bio"
+        {{- with resources.Get "images/footerClean.jpg" }}
+            style="--bg-img-footer-clean: url({{ .RelPermalink }})"
+        {{- end }}>
+        {{- with resources.Get "/images/Tomi-Graci.jpeg" }}
+            <img src='{{- .Permalink }}' alt="Tomi Graci" class="tomi-graci" />
+        {{- end }}
+    </div>
+    <div class="green-rip" {{- with resources.Get "images/footerCleanReverse.png" }} style="--bg-img-footer-clean-reverse: url({{ .RelPermalink }})" {{- end }}>
+    </div>
+
 {{- end }}
