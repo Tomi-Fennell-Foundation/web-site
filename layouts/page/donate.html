@@ -1,42 +1,51 @@
 {{- define "main" }}
 
-<script async
-    src="https://js.stripe.com/v3/buy-button.js">
-</script>
-
 <div class="quienesSomos">
     {{ .Content }}
-</div>
-
-<button type="button" class="collapsible">
-    {{- with resources.Get "images/stripe.ico" }}
-        <img src="{{- .RelPermalink }}" alt="Stripe" width="2"/>
-    {{- end }}
-    Stripe
-</button>
-<div class="content">
-    <stripe-buy-button
-        buy-button-id="{{- .Params.stripe_button_id }}"
-        publishable-key="pk_test_51QpEFXAiAIZ7c7p74YIb0LHuwkt4ncjzxydzyqOkmR1jALyNSWSZ3za3PNWkwep6SuOuK33FUFjP2tEzg9EiPdTL00Nw0dpTZn"
-    >
-    </stripe-buy-button>
 </div>
 
 <button type="button" class="collapsible">
     {{- with resources.Get "images/paypal.png" }}
         <img src="{{- .RelPermalink }}" alt="PayPal" width="2"/>
     {{- end }}
-    PayPal
+    PayPal this tab
 </button>
 <div class="content">
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="business" value="YMX7NLPL6DWHE" />
-        <input type="hidden" name="no_recurring" value="0" />
-        <input type="hidden" name="item_name" value="Help a community get access to renewable energy." />
-        <input type="hidden" name="currency_code" value="USD" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+    <form action="https://www.sandbox.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="296QHATA3YW4U" />
+        <input
+            type="image"
+            src="https://www.paypalobjects.com/{{- .Params.paypal_button_locale }}/i/btn/btn_donate_LG.gif"
+            name="submit"
+            title="Launch PayPal donation form"
+            alt="Donate with PayPal button"
+        />
+        <img alt="" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
     </form>
+</div>
+
+<button type="button" class="collapsible">
+    {{- with resources.Get "images/paypal.png" }}
+        <img src="{{- .RelPermalink }}" alt="PayPal" width="2"/>
+    {{- end }}
+    PayPal popup
+</button>
+<div class="content">
+    <div id="donate-button-container">
+        <div id="donate-button"></div>
+        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+        <script>
+            PayPal.Donation.Button({
+                env:'sandbox',
+                hosted_button_id:'296QHATA3YW4U',
+                image: {
+                    src:'https://www.paypalobjects.com/{{- .Params.paypal_button_locale }}/i/btn/btn_donate_LG.gif',
+                    alt:'Donate with PayPal button',
+                    title:'PayPal - The safer, easier way to pay online!',
+                }
+            }).render('#donate-button');
+        </script>
+    </div>
 </div>
 
 <button type="button" class="collapsible">{{- .Params.no_platform }}
@@ -48,6 +57,23 @@
         height="1050"
         frameborder="0"
     >{{- .Params.loading }}</iframe>
+</div>
+
+<button type="button" class="collapsible">
+    {{- with resources.Get "images/stripe.ico" }}
+        <img src="{{- .RelPermalink }}" alt="Stripe" width="2"/>
+    {{- end }}
+    Stripe
+</button>
+<div class="content">
+    <script async
+        src="https://js.stripe.com/v3/buy-button.js">
+    </script>
+    <stripe-buy-button
+        buy-button-id="{{- .Params.stripe_button_id }}"
+        publishable-key="pk_test_51QpEFXAiAIZ7c7p74YIb0LHuwkt4ncjzxydzyqOkmR1jALyNSWSZ3za3PNWkwep6SuOuK33FUFjP2tEzg9EiPdTL00Nw0dpTZn"
+    >
+    </stripe-buy-button>
 </div>
 
 <script>
