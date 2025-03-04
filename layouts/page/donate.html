@@ -8,10 +8,10 @@
     {{- with resources.Get "images/paypal.png" }}
         <img src="{{- .RelPermalink }}" alt="PayPal" width="2"/>
     {{- end }}
-    PayPal this tab
+    PayPal in a new tab
 </button>
 <div class="content">
-    <form action="https://www.sandbox.paypal.com/donate" method="post" target="_top">
+    <form action="https://www.sandbox.paypal.com/donate" method="post" target="_blank">
         <input type="hidden" name="hosted_button_id" value="296QHATA3YW4U" />
         <input
             type="image"
@@ -20,7 +20,6 @@
             title="Launch PayPal donation form"
             alt="Donate with PayPal button"
         />
-        <img alt="" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
     </form>
 </div>
 
@@ -28,7 +27,7 @@
     {{- with resources.Get "images/paypal.png" }}
         <img src="{{- .RelPermalink }}" alt="PayPal" width="2"/>
     {{- end }}
-    PayPal popup
+    PayPal in a popup
 </button>
 <div class="content">
     <div id="donate-button-container">
