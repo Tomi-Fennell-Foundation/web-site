@@ -8,7 +8,7 @@
     {{- with resources.Get "images/paypal.png" }}
         <img src="{{- .RelPermalink }}" alt="PayPal" width="2"/>
     {{- end }}
-    PayPal in a new tab
+    PayPal
 </button>
 <div class="content">
     <form action="https://www.sandbox.paypal.com/donate" method="post" target="_blank">
@@ -21,30 +21,6 @@
             alt="Donate with PayPal button"
         />
     </form>
-</div>
-
-<button type="button" class="collapsible">
-    {{- with resources.Get "images/paypal.png" }}
-        <img src="{{- .RelPermalink }}" alt="PayPal" width="2"/>
-    {{- end }}
-    PayPal in a popup
-</button>
-<div class="content">
-    <div id="donate-button-container">
-        <div id="donate-button"></div>
-        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-        <script>
-            PayPal.Donation.Button({
-                env:'sandbox',
-                hosted_button_id:'296QHATA3YW4U',
-                image: {
-                    src:'https://www.paypalobjects.com/{{- .Params.paypal_button_locale }}/i/btn/btn_donate_LG.gif',
-                    alt:'Donate with PayPal button',
-                    title:'PayPal - The safer, easier way to pay online!',
-                }
-            }).render('#donate-button');
-        </script>
-    </div>
 </div>
 
 <button type="button" class="collapsible">{{- .Params.no_platform }}
