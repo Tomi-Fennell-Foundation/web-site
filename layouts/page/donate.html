@@ -1,11 +1,26 @@
 {{- define "main" }}
 
-<script async
-    src="https://js.stripe.com/v3/buy-button.js">
-</script>
-
 <div class="quienesSomos">
     {{ .Content }}
+</div>
+
+<button type="button" class="collapsible">
+    {{- with resources.Get "images/paypal.png" }}
+        <img src="{{- .RelPermalink }}" alt="PayPal" width="2"/>
+    {{- end }}
+    PayPal
+</button>
+<div class="content">
+    <form action="https://www.sandbox.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="hosted_button_id" value="FMFYC3YGFNM9J" />
+        <input
+            type="image"
+            src="https://www.paypalobjects.com/{{- .Params.paypal_button_locale }}/i/btn/btn_donate_LG.gif"
+            name="submit"
+            title="Launch PayPal donation form"
+            alt="Donate with PayPal button"
+        />
+    </form>
 </div>
 
 <button type="button" class="collapsible">{{- .Params.no_platform }}
