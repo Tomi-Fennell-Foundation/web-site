@@ -34,23 +34,6 @@
     >{{- .Params.loading }}</iframe>
 </div>
 
-<button type="button" class="collapsible">
-    {{- with resources.Get "images/stripe.ico" }}
-        <img src="{{- .RelPermalink }}" alt="Stripe" width="2"/>
-    {{- end }}
-    Stripe
-</button>
-<div class="content">
-    <script async
-        src="https://js.stripe.com/v3/buy-button.js">
-    </script>
-    <stripe-buy-button
-        buy-button-id="{{- .Params.stripe_button_id }}"
-        publishable-key="pk_test_51QpEFXAiAIZ7c7p74YIb0LHuwkt4ncjzxydzyqOkmR1jALyNSWSZ3za3PNWkwep6SuOuK33FUFjP2tEzg9EiPdTL00Nw0dpTZn"
-    >
-    </stripe-buy-button>
-</div>
-
 <script>
     var collapsible = document.getElementsByClassName("collapsible");
     var i;
