@@ -8,20 +8,6 @@
     {{ .Content }}
 </div>
 
-<button type="button" class="collapsible">
-    {{- with resources.Get "images/stripe.ico" }}
-        <img src="{{- .RelPermalink }}" alt="Stripe" width="2"/>
-    {{- end }}
-    Stripe
-</button>
-<div class="content">
-    <stripe-buy-button
-        buy-button-id="{{- .Params.stripe_button_id }}"
-        publishable-key="pk_test_51QpEFXAiAIZ7c7p74YIb0LHuwkt4ncjzxydzyqOkmR1jALyNSWSZ3za3PNWkwep6SuOuK33FUFjP2tEzg9EiPdTL00Nw0dpTZn"
-    >
-    </stripe-buy-button>
-</div>
-
 <button type="button" class="collapsible">{{- .Params.no_platform }}
 </button>
 <div class="content">
