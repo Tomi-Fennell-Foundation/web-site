@@ -8,4 +8,5 @@ no_platform = "No pay platform. Please call me back."
 paypal_button_locale = "en_US"
 +++
 
-Please select the payment platform you would like to use to make your donation.
+<!-- Please select how you would like make your donation. -->
+Please fill out the following form and we will contact you to process your generous donation.

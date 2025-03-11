@@ -8,4 +8,5 @@ no_platform = "Sin plataforma de pago. Por favor llámenme."
 paypal_button_locale = "es_XC"
 +++
 
-Por favor elegí la plataforma de pago que querés usar para hacer tu donación.
+<!-- Por favor elegí cómo querés hacer tu donación. -->
+Por favor llená el siguiente formulario y te vamos a llamar para procesar tu donación.
