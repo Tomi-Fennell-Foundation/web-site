@@ -4,6 +4,11 @@
     {{ .Content }}
 </div>
 
+{{/*  Toggle use of PayPal by setting the variable `use_paypal` to `true` or `false` here.  */}}
+{{- $use_paypal := false }}
+
+{{- if $use_paypal }}
+
 <button type="button" class="collapsible">
     {{- with resources.Get "images/paypal.png" }}
         <img src="{{- .RelPermalink }}" alt="PayPal" width="2"/>
@@ -50,5 +55,18 @@
         });
     }
 </script>
+
+{{- else }}
+
+    <div class="content-no-collapse">
+        <iframe
+            src="{{- .Params.form_url }}"
+            width="800"
+            height="1050"
+            frameborder="0"
+        >{{- .Params.loading }}</iframe>
+    </div>
+
+{{- end }}
 
 {{- end }}
