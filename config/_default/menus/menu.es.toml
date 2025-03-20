@@ -19,14 +19,14 @@
     identifier = "communities"
     pageRef = "/communities"
     weight = 30
-# [[main]]
-#     identifier = "projects"
-#     weight = 40
-#     [[main]]
-#         parent = "projects"
-#         identifier = "sierra-dorada"
-#         pageRef = "/projects/sierra-dorada"
-#         weight = 10
+[[main]]
+    identifier = "projects"
+    weight = 40
+    [[main]]
+        parent = "projects"
+        identifier = "sierra-dorada"
+        pageRef = "/projects/sierra-dorada"
+        weight = 10
 #     [[main]]
 #         parent = "projects"
 #         identifier = "2025"
