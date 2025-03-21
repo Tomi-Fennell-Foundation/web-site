@@ -100,12 +100,13 @@ video {
 
 .principito {
     padding-top: 80px;
+    padding-bottom: 20px;
     color: rgb(99, 99, 99);
     text-align: center;
     background-color: white;
     background-image: var(--bg-img-footer-clean-reverse);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
 }
 
 .principito img {

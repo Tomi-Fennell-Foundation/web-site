@@ -1,0 +1,28 @@
+{{- define "main" }}
+
+<div
+    class="principito"
+    {{- with resources.Get "images/footerCleanReverse.png" }}
+    style="--bg-img-footer-clean-reverse: url({{ .RelPermalink }})"
+    {{- end }}>
+</div>
+
+<div class="quienesSomos">
+    <div>
+        <h3>{{- .Title }}</h3>
+        {{- .Content }}
+    </div>
+
+    {{- with resources.Get "/images/hojas_0.png" }}
+        <img src='{{- .RelPermalink }}' alt="hojas_0" class="hojas0" />
+    {{- end }}
+
+    {{- $videoFileName := printf "/images/sierraDorada.mp4" -}}
+    {{- with resources.Get $videoFileName }}
+        <video controls>
+            <source src='{{- .RelPermalink }}' type="video/mp4">
+        </video>
+    {{- end }}
+</div>
+
+{{- end }}
