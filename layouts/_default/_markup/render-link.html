@@ -15,7 +15,4 @@
     {{- else if strings.HasPrefix .Destination "mailto" }}
         onClick = "javascript:window.open('mailto:{{ .Text }}', 'mail'); event.preventDefault()"
     {{- end }}>
-    <span>
-        {{ .Text }}
-    </span>
-</a>
+    <span>{{ .Text }}</span></a>
