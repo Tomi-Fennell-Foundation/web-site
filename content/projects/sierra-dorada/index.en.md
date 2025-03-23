@@ -1,10 +1,12 @@
 +++
 title = 'Sierra Dorada - 2024'
-layout = "project"
+layout = "sierra-dorada"
 +++
 
-### English
+In 2024 the Tomi Fennell foundation worked with [Fundación Sierra Dorada](http://www.sierradorada.com.ar/) to expand the solar energy system they were running at their children's shelter. The shelter, founded in November 2000, is located in San Marcos Sierras, Córdoba, Argentina.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+[Iris Energía](https://irisenergia.com.ar/) custom-built an aluminum structure to add [8 solar
+panels](https://www.jinkosolar.com/uploads/TR%20JKM450-470M-7RL3-(V)-C1-EN.pdf) to the existing system. This added 3760
+Watts of generation power. Additionally, a new
+[inverter](https://growatt.tech/product/growatt-mic-3000-tl-x-1-phase-inverter/) was connected to the system in order to
+manage the additional power.
