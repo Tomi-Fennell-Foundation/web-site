@@ -10,7 +10,11 @@
     <iframe
         src="{{- .Params.form_url }}"
         width="800"
+    {{- if eq $.Site.Language.LanguageName "English" }}
+        height="1140"
+    {{- else }}
         height="400"
+    {{- end }}
         frameborder="0"
         marginheight="0"
         marginwidth="0"
