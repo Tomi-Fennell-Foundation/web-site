@@ -17,3 +17,6 @@ own sources of renewable energy.
 Our work is based on charitable actions that will help cover the energy needs of these communities.
 It will be done in collaboration with the communities' leaders and other entities or people that share
 the same objective.
+
+The Tomi Fennell Foundation is registered with the Internal Revenue Service (IRS) as an entity exempt from federal
+income tax. Its Employer Identification Number (EIN) is 93-2377772.

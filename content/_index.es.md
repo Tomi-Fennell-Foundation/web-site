@@ -17,3 +17,6 @@ renovable.
 Nuestra labor se sustenta en acciones solidarias que tienden a cubrir las necesidades de energía
 de estas comunidades, colaborando con sus líderes, y realizando alianzas con otras entidades o
 personas que compartan el mismo objetivo.
+
+La Fundación Tomi Fennell está registrada con el Internal Revenue Service (IRS) de Estados Unidos como una entidad
+exempta de impuesto federal a los ingresos. Su Employer Identification Number (EIN) es 93-2377772.
