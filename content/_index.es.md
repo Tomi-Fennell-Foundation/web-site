@@ -19,4 +19,4 @@ de estas comunidades, colaborando con sus líderes, y realizando alianzas con ot
 personas que compartan el mismo objetivo.
 
 La Fundación Tomi Fennell está registrada con el Internal Revenue Service (IRS) de Estados Unidos como una entidad
-exempta de impuesto federal a los ingresos. Su Employer Identification Number (EIN) es 93-2377772.
+exempta de impuesto federal a los ingresos bajo la Sección 501(c)(3) del Internal Revenue Code (IRC). Su Employer Identification Number (EIN) es 93-2377772.
